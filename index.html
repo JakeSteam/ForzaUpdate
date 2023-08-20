@@ -1,0 +1,11 @@
+<p>Forza updates at 14:30 GMT every Wednesday.</p>
+<p id="local"></p>
+
+
+
+<script>
+    const gmtTime = '2023-08-24T14:30:00Z';
+    const gmtDate = new Date(gmtTime);
+    document.getElementById('local').innerHTML = "For you, this is " + gmtDate.toLocaleString();
+
+</script>
