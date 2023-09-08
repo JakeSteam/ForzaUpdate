@@ -1,10 +1,6 @@
-var firstSeriesStart = new Date(2021, 10, 11, 14, 30, 0);
+var firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
 var seasons = [
     "Wet",
     "Storm",
@@ -83,13 +79,17 @@ function updateCountdowns() {
 
 // https://stackoverflow.com/a/65869347/608312
 function getNextSeasonStart(d = new Date()) {
-    let thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay()), 14, 30, 0, 0);
+    let thursday = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay()), 14, 30, 0, 0));
     thursday <= d ? thursday.setDate(thursday.getDate() + 7) : null;
     return thursday;
 }
 
 
 // https://stackoverflow.com/a/9335296/608312
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
 function getCountdownText(targetDate, now = Date()) {
     var difference = targetDate - now;
     var days = Math.floor(difference / _day);
