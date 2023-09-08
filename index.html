@@ -1,45 +1,21 @@
 <head>
     <title>Forza Update times</title>
+    <script src="js/timer.js"></script>
 </head>
+
 <body>
-<p>Forza updates at 14:30 GMT every Thursday.</p>
+    <h2>Updates</h2>
+    <p>New seasons are every Thursday at 14:30 GMT, with new challenges & rewards.</p>
+    <p>New series (usually with a content update) are every 4 weeks.</p>
 
-<h1>Next season is <span id="next"></span>!</h1>
-<h1 id="countdown"></h1>
+    <h1>Next season starts <span id="next"></span>!</h1>
+    <h1>This is in <span id="countdown"></span></h1>
 
+    <h2>Links</h2>
 
+    <ul>
+        <li><a href="https://www.reddit.com/r/forza/about/sticky?num=1">Season information / tunes (r/Forza)</a></li>
+        <li><a href="https://support.forzamotorsport.net/hc/en-us/sections/4408834302355-Release-Notes-and-Known-Issues">Update release notes</a></li>
+    </ul>
 
-<script>
-    var end = getNextThursday();
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-
-    showRemaining();
-    setInterval(showRemaining, 1000);
-
-    // https://stackoverflow.com/a/65869347/608312
-    function getNextThursday(d = new Date()) {
-        let thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay() ), 14, 30, 0, 0);
-        thursday <= d? thursday.setDate(thursday.getDate() + 7) : null;
-        return thursday;
-    }
-
-    // https://stackoverflow.com/a/9335296/608312
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-
-        document.getElementById('next').innerHTML = end.toLocaleString();
-        document.getElementById('countdown').innerHTML = days + 'days ';
-        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-        document.getElementById('countdown').innerHTML += seconds + 'secs';
-    }
-</script>
 </body>

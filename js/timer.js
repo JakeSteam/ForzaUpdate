@@ -1,0 +1,34 @@
+var end = getNextThursday();
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+window.onload = pageLoaded;
+
+function pageLoaded() {
+    showRemaining();
+    setInterval(showRemaining, 1000);
+}
+
+// https://stackoverflow.com/a/65869347/608312
+function getNextThursday(d = new Date()) {
+    let thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay() ), 14, 30, 0, 0);
+    thursday <= d? thursday.setDate(thursday.getDate() + 7) : null;
+    return thursday;
+}
+
+// https://stackoverflow.com/a/9335296/608312
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now;
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('next').innerHTML = end.toLocaleString();
+    document.getElementById('countdown').innerHTML = days + ' days, ';
+    document.getElementById('countdown').innerHTML += hours + ' hours, ';
+    document.getElementById('countdown').innerHTML += minutes + ' minutes, ';
+    document.getElementById('countdown').innerHTML += seconds + ' seconds';
+}
