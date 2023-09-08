@@ -1,5 +1,5 @@
 var firstSeriesStart = new Date(2021, 10, 11, 14, 30, 0);
-var end = getNextThursday();
+var nextSeasonStart = getNextThursday();
 var _second = 1000;
 var _minute = _second * 60;
 var _hour = _minute * 60;
@@ -35,14 +35,15 @@ var seriesNames = [
     "Explore the Horizon",
     "Upgrade Heroes",
     "Summer Party",
-    "Italian Automotive"
+    "Italian Automotive",
+    "Horizon Creatives"
 ];
 window.onload = pageLoaded;
 
 function pageLoaded() {
+    getSeriesAndSeason();
     showRemaining();
     setInterval(showRemaining, 1000);
-    getSeriesAndSeason();
 }
 
 // https://stackoverflow.com/a/65869347/608312
@@ -55,13 +56,13 @@ function getNextThursday(d = new Date()) {
 // https://stackoverflow.com/a/9335296/608312
 function showRemaining() {
     var now = new Date();
-    var distance = end - now;
+    var distance = nextSeasonStart - now;
     var days = Math.floor(distance / _day);
     var hours = Math.floor((distance % _day) / _hour);
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById('next').innerHTML = end.toLocaleString();
+    document.getElementById('next').innerHTML = nextSeasonStart.toLocaleString();
     document.getElementById('countdown').innerHTML = days + ' days, ';
     document.getElementById('countdown').innerHTML += hours + ' hours, ';
     document.getElementById('countdown').innerHTML += minutes + ' minutes, ';
@@ -72,10 +73,13 @@ function showRemaining() {
 function getSeriesAndSeason(date = new Date()) {
     var totalWeeks = weeksBetween(firstSeriesStart, date);
     var currentSeries = Math.ceil(totalWeeks / 4);
-    var remainder = (totalWeeks - 1) % 4;
+    var seasonIndex = (totalWeeks - 1) % 4;
+    var nextSeasonIndex = totalWeeks % 4;
     document.getElementById('series').innerHTML = currentSeries;
-    document.getElementById('series-name').innerHTML = seriesNames[currentSeries];
-    document.getElementById('season').innerHTML = seasons[remainder];
+    document.getElementById('series-name').innerHTML = seriesNames[currentSeries] || "Unannounced";
+    document.getElementById('next-series-name').innerHTML = seriesNames[currentSeries + 1] || "Unannounced";
+    document.getElementById('season').innerHTML = seasons[seasonIndex];
+    document.getElementById('next-season').innerHTML = seasons[nextSeasonIndex];
     //console.log("Weeks: " + totalWeeks + ". " + date.toString() + ": Series " + currentSeries + " Week " + remainder + " Season " + seasons[remainder]);
 }
 
