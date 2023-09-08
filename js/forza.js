@@ -44,33 +44,8 @@ window.onload = pageLoaded;
 
 function pageLoaded() {
     showSeriesAndSeasonInfo();
-    showRemaining();
-    setInterval(showRemaining, 1000);
-}
-
-// https://stackoverflow.com/a/65869347/608312
-function getNextSeasonStart(d = new Date()) {
-    let thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay()), 14, 30, 0, 0);
-    thursday <= d ? thursday.setDate(thursday.getDate() + 7) : null;
-    return thursday;
-}
-
-function showRemaining() {
-    var now = new Date();
-    document.getElementById('next-season-date').innerHTML = nextSeasonStart.toLocaleString();
-    document.getElementById('next-season-countdown').innerHTML = getCountdownText(nextSeasonStart, now);
-    document.getElementById('next-series-date').innerHTML = nextSeriesStart.toLocaleString();
-    document.getElementById('next-series-countdown').innerHTML = getCountdownText(nextSeriesStart, now);
-}
-
-// https://stackoverflow.com/a/9335296/608312
-function getCountdownText(targetDate, now = Date()) {
-    var difference = targetDate - now;
-    var days = Math.floor(difference / _day);
-    var hours = Math.floor((difference % _day) / _hour);
-    var minutes = Math.floor((difference % _hour) / _minute);
-    var seconds = Math.floor((difference % _minute) / _second);
-    return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
 }
 
 // Reference: https://forza.fandom.com/wiki/Forza_Horizon_5/Festival_Playlist
@@ -84,13 +59,44 @@ function showSeriesAndSeasonInfo(date = new Date()) {
     var weeksRemainingInSeries = (4 - nextSeasonIndex) % 4;
     nextSeriesStart = addDays(nextSeasonStart, weeksRemainingInSeries * 7);
 
+    // Series
     document.getElementById('current-series-number').innerHTML = currentSeries;
     document.getElementById('current-series-link').innerHTML = seriesNames[currentSeries].name || "Unannounced";
     document.getElementById('current-series-link').href = seriesNames[currentSeries].url || "https://forza.net/news/";
     document.getElementById('next-series-link').innerHTML = seriesNames[currentSeries + 1].name || "Unannounced";
     document.getElementById('next-series-link').href = seriesNames[currentSeries + 1].url || "https://forza.net/news/";
+    document.getElementById('next-series-date').innerHTML = nextSeriesStart.toLocaleString();
+
+    // Season
     document.getElementById('current-season-name').innerHTML = seasons[seasonIndex];
     document.getElementById('next-season-name').innerHTML = seasons[nextSeasonIndex];
+    document.getElementById('next-season-date').innerHTML = nextSeasonStart.toLocaleString();
+}
+
+function updateCountdowns() {
+    var now = new Date();
+    document.getElementById('next-season-countdown').innerHTML = getCountdownText(nextSeasonStart, now);
+    document.getElementById('next-series-countdown').innerHTML = getCountdownText(nextSeriesStart, now);
+}
+
+// Utils //
+
+// https://stackoverflow.com/a/65869347/608312
+function getNextSeasonStart(d = new Date()) {
+    let thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + (4 - d.getDay()), 14, 30, 0, 0);
+    thursday <= d ? thursday.setDate(thursday.getDate() + 7) : null;
+    return thursday;
+}
+
+
+// https://stackoverflow.com/a/9335296/608312
+function getCountdownText(targetDate, now = Date()) {
+    var difference = targetDate - now;
+    var days = Math.floor(difference / _day);
+    var hours = Math.floor((difference % _day) / _hour);
+    var minutes = Math.floor((difference % _hour) / _minute);
+    var seconds = Math.floor((difference % _minute) / _second);
+    return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
 }
 
 // https://stackoverflow.com/a/22859920/608312
