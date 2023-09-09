@@ -1,5 +1,3 @@
-# 🚗 Forza Horizon 5 Update Info 🚗
-
 ## Info
 
 New seasons are every Thursday at 14:30 GMT, with new challenges & rewards. New series (usually with a content update) are every 4 weeks.

@@ -34,7 +34,7 @@ var seriesNames = [
     { "name": "Summer Party", "url": "https://forza.net/news/forza-horizon-5-summer-party" },
     { "name": "Italian Automotive", "url": "https://forza.net/news/forza-horizon-5-italian-automotive" },
     { "name": "Horizon Creatives", "url": "https://forza.net/news/forza-horizon-5-horizon-creatives" },
-    { "name": "(Unconfirmed) Dia de Muertos", "url": "" }
+    { "name": "Día de Muertos", "url": "" }
 ];
 
 window.addEventListener("load", function() {
