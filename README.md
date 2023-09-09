@@ -22,3 +22,6 @@ Next season (<span id="next-season-name"></span>) starts in <b id="next-season-c
 * [Site Source Code (GitHub)](https://github.com/JakeSteam/ForzaUpdate)
 
 Got a suggestion / found a bug? [Raise an issue](https://github.com/JakeSteam/ForzaUpdate/issues) or [Email me](mailto:forza@jakelee.co.uk) 😊
+
+<script src="js/forza.js"></script>
+<script src="js/new_window.js"></script>
