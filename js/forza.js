@@ -36,13 +36,12 @@ var seriesNames = [
     { "name": "Horizon Creatives", "url": "https://forza.net/news/forza-horizon-5-horizon-creatives" },
     { "name": "(Unconfirmed) Dia de Muertos", "url": "" }
 ];
-window.onload = pageLoaded;
 
-function pageLoaded() {
+window.addEventListener("load", function() {
     showSeriesAndSeasonInfo();
     updateCountdowns();
     setInterval(updateCountdowns, 1000);
-}
+}, false);
 
 // Reference: https://forza.fandom.com/wiki/Forza_Horizon_5/Festival_Playlist
 function showSeriesAndSeasonInfo(date = new Date()) {
