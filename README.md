@@ -13,11 +13,11 @@ Next season (<span id="next-season-name"></span>) starts in <b id="next-season-c
 ## Links
 
 * [Forza Wiki](https://forza.fandom.com/wiki/Forza_Horizon_5)
-* [Update release notes](https://forza.net/news)
-* [Season information / tunes (r/Forza)](https://www.reddit.com/r/forza/about/sticky?num=1)
+* [Update Release Notes](https://forza.net/news)
+* [Season Information / Tunes (r/Forza)](https://www.reddit.com/r/forza/about/sticky?num=1)
 * [FH5 Badges Guide](https://jakelee.co.uk/complete-guide-to-forza-horizon-5-badges/)
 * [FH5 Creative Accolades Guide](https://jakelee.co.uk/forza-horizon-5-creative-accolades/)
-* [Site Source Code (GitHub)](https://github.com/JakeSteam/ForzaUpdate)
+* [Site Source Code (GitHub)](https://github.com/JakeSteam/ForzaUpdate) & [Announcement Post](https://blog.jakelee.co.uk/forza-update-timer-miniproject/)
 
 Got a suggestion / found a bug? [Raise an issue](https://github.com/JakeSteam/ForzaUpdate/issues) or [Email me](mailto:forza@jakelee.co.uk) 😊
 
