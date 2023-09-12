@@ -1,6 +1,6 @@
 ## Info
 
-New seasons are every Thursday at 14:30 GMT, with new challenges & rewards. New series (usually with a content update) are every 4 weeks.
+New seasons are every Thursday at 14:30 GMT, with new challenges & rewards. New series (usually with a large game update) are every 4 weeks.
       
 ## Series & seasons
 
