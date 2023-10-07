@@ -2,10 +2,10 @@ var firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
-    "Wet",
-    "Storm",
-    "Dry",
-    "Hot"
+    "Summer / Wet",
+    "Autumun / Storm",
+    "Winter / Dry",
+    "Sprint / Hot"
 ];
 var seriesNames = [
     { "name": "Welcome Week", "url": "https://forza.net/news/forza-horizon-5-early-access" },
@@ -34,7 +34,8 @@ var seriesNames = [
     { "name": "Summer Party", "url": "https://forza.net/news/forza-horizon-5-summer-party" },
     { "name": "Italian Automotive", "url": "https://forza.net/news/forza-horizon-5-italian-automotive" },
     { "name": "Horizon Creatives", "url": "https://forza.net/news/forza-horizon-5-horizon-creatives" },
-    { "name": "Día de Muertos", "url": "" }
+    { "name": "Día de Muertos", "url": "https://forza.net/news/forza-horizon-5-dia-de-muertos" },
+    { "name": "American Automotive", "url": "" }
 ];
 
 window.addEventListener("load", function() {
