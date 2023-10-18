@@ -3,7 +3,7 @@ var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
     "Summer / Wet",
-    "Autumun / Storm",
+    "Autumn / Storm",
     "Winter / Dry",
     "Sprint / Hot"
 ];
