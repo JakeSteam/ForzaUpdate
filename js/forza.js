@@ -35,7 +35,8 @@ var seriesNames = [
     { "name": "Italian Automotive", "url": "https://forza.net/news/forza-horizon-5-italian-automotive" },
     { "name": "Horizon Creatives", "url": "https://forza.net/news/forza-horizon-5-horizon-creatives" },
     { "name": "Día de Muertos", "url": "https://forza.net/news/forza-horizon-5-dia-de-muertos" },
-    { "name": "American Automotive", "url": "" }
+    { "name": "American Automotive", "url": "https://forza.net/news/forza-horizon-5-american-automotive" },
+    { "name": "Winter Wonderland", "url": "" } 
 ];
 
 window.addEventListener("load", function() {
