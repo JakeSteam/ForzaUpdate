@@ -36,9 +36,10 @@ var seriesNames = [
     { "name": "Horizon Creatives", "url": "https://forza.net/news/forza-horizon-5-horizon-creatives" },
     { "name": "Día de Muertos", "url": "https://forza.net/news/forza-horizon-5-dia-de-muertos" },
     { "name": "American Automotive", "url": "https://forza.net/news/forza-horizon-5-american-automotive" },
-    { "name": "Winter Wonderland", "url": "" },
-    { "name": "Community Choice", "url": "" },
-    { "name": "Lunar New Year", "url": "" } 
+    { "name": "Winter Wonderland", "url": "https://forza.net/news/Winter-Wonderland" },
+    { "name": "Community Choice", "url": "https://forza.net/news/forza-horizon-5-Community-Choice" },
+    { "name": "Lunar New Year", "url": "https://forza.net/news/forza-horizon-5-Lunar-New-Year" },
+    { "name": "European Automotive", "url": "" } 
 ];
 
 window.addEventListener("load", function() {
