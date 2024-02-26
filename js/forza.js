@@ -39,7 +39,8 @@ var seriesNames = [
     { "name": "Winter Wonderland", "url": "https://forza.net/news/Winter-Wonderland" },
     { "name": "Community Choice", "url": "https://forza.net/news/forza-horizon-5-Community-Choice" },
     { "name": "Lunar New Year", "url": "https://forza.net/news/forza-horizon-5-Lunar-New-Year" },
-    { "name": "European Automotive", "url": "" } 
+    { "name": "European Automotive", "url": "https://forza.net/news/forza-horizon-5-European-Auto" },
+    { "name": "Horizon Race-Off", "url": "" } 
 ];
 
 window.addEventListener("load", function() {
