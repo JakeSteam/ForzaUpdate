@@ -1,4 +1,4 @@
-var firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
+vvar firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
@@ -40,7 +40,7 @@ var seriesNames = [
     { "name": "Community Choice", "url": "https://forza.net/news/forza-horizon-5-Community-Choice" },
     { "name": "Lunar New Year", "url": "https://forza.net/news/forza-horizon-5-Lunar-New-Year" },
     { "name": "European Automotive", "url": "https://forza.net/news/forza-horizon-5-European-Auto" },
-    { "name": "Horizon Race-Off", "url": "" },
+    { "name": "Horizon Race-Off", "url": "https://forza.net/news/forza-horizon-5-Horizon-Race-Off" },
     { "name": "Apex Allstars", "url": ""}
 ];
 
