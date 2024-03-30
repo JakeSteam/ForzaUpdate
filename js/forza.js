@@ -1,4 +1,4 @@
-vvar firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
+var firstSeriesStart = new Date(Date.UTC(2021, 10, 11, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
