@@ -41,7 +41,8 @@ var seriesNames = [
     { "name": "Lunar New Year", "url": "https://forza.net/news/forza-horizon-5-Lunar-New-Year" },
     { "name": "European Automotive", "url": "https://forza.net/news/forza-horizon-5-European-Auto" },
     { "name": "Horizon Race-Off", "url": "https://forza.net/news/forza-horizon-5-Horizon-Race-Off" },
-    { "name": "Apex Allstars", "url": ""}
+    { "name": "Apex Allstars", "url": "https://forza.net/news/forza-horizon-5-Apex-AllStars" },
+    { "name": "Horizon Retrowave", "url": "" }
 ];
 
 window.addEventListener("load", function() {
