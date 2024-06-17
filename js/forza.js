@@ -42,7 +42,9 @@ var seriesNames = [
     { "name": "European Automotive", "url": "https://forza.net/news/forza-horizon-5-European-Auto" },
     { "name": "Horizon Race-Off", "url": "https://forza.net/news/forza-horizon-5-Horizon-Race-Off" },
     { "name": "Apex Allstars", "url": "https://forza.net/news/forza-horizon-5-Apex-AllStars" },
-    { "name": "Horizon Retrowave", "url": "" }
+    { "name": "Horizon Retrowave", "url": "https://forza.net/news/forza-horizon-5-horizon-retrowave" },
+    { "name": "Modern Horizons", "url": "https://forza.net/news/forza-horizon-5-modern-horizons" },
+    { "name": "???", "url": "" }
 ];
 
 window.addEventListener("load", function() {
