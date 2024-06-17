@@ -44,7 +44,7 @@ var seriesNames = [
     { "name": "Apex Allstars", "url": "https://forza.net/news/forza-horizon-5-Apex-AllStars" },
     { "name": "Horizon Retrowave", "url": "https://forza.net/news/forza-horizon-5-horizon-retrowave" },
     { "name": "Modern Horizons", "url": "https://forza.net/news/forza-horizon-5-modern-horizons" },
-    { "name": "???", "url": "" }
+    { "name": "Horizon Cars and Coffee", "url": "" }
 ];
 
 window.addEventListener("load", function() {
