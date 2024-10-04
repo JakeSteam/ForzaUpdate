@@ -47,7 +47,8 @@ var seriesNames = [
     { "name": "Horizon Cars and Coffee", "url": "https://forza.net/news/forza-horizon-5-cars-coffee" },
     { "name": "High-Performance Dailies", "url": "https://forza.net/news/forza-horizon-5-high-performance-dailies" },
     { "name": "Hidden Horizons", "url": "https://forza.net/news/forza-horizon-5-hidden-horizons" },
-    { "name": "Back to the 90's", "url": "https://forza.net/news/forza-horizon-5-back-to-the-90s" }
+    { "name": "Back to the 90's", "url": "https://forza.net/news/forza-horizon-5-back-to-the-90s" },
+    { "name": "Horizon Track Day", "url": "https://forza.net/news/" }
 ];
 
 window.addEventListener("load", function() {
