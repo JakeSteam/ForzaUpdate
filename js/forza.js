@@ -49,7 +49,8 @@ var seriesNames = [
     { "name": "Hidden Horizons", "url": "https://forza.net/news/forza-horizon-5-hidden-horizons" },
     { "name": "Back to the 90's", "url": "https://forza.net/news/forza-horizon-5-back-to-the-90s" },
     { "name": "Horizon Track Day", "url": "https://forza.net/news/forza-horizon-5-horizon-track-day" },
-    { "name": "Horizon Holidays Mixup", "url": "https://forza.net/news/" }
+    { "name": "Horizon Holidays Mixup", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" },
+    { "name": "Extreme Horizon", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" }
 ];
 
 window.addEventListener("load", function() {
