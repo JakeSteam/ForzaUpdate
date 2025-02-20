@@ -52,7 +52,7 @@ var seriesNames = [
     { "name": "Horizon Holidays Mixup", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" },
     { "name": "Extreme Horizon", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" },
     { "name": "Midnight Muscle", "url": "https://forza.net/news/forza-horizon-5-midnight-muscle" },
-    { "name": "Player Vote (Midnight Muscle)", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
+    { "name": "Player Vote (High Performance)", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
     { "name": "Player Voted", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
     { "name": "Player Voted", "url": "https://forza.net/news/" },
     { "name": "Player Voted", "url": "https://forza.net/news/" },
