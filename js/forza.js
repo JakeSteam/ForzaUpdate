@@ -54,7 +54,7 @@ var seriesNames = [
     { "name": "Midnight Muscle", "url": "https://forza.net/news/forza-horizon-5-midnight-muscle" },
     { "name": "Player Vote (High Performance)", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
     { "name": "Player Voted", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
+    { "name": "Player Voted (Horizon Wilds)", "url": "https://forza.net/news/" },
     { "name": "Player Voted", "url": "https://forza.net/news/" },
     { "name": "Player Voted", "url": "https://forza.net/news/" },
     { "name": "Player Voted", "url": "https://forza.net/news/" },
