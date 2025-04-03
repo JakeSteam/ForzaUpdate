@@ -52,27 +52,7 @@ var seriesNames = [
     { "name": "Horizon Holidays Mixup", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" },
     { "name": "Extreme Horizon", "url": "https://forza.net/news/forza-horizon-5-horizon-holiday-mixup" },
     { "name": "Midnight Muscle", "url": "https://forza.net/news/forza-horizon-5-midnight-muscle" },
-    { "name": "Player Vote (High Performance)", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
-    { "name": "Player Voted", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" },
-    { "name": "Player Voted (Horizon Wilds)", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" },
-    { "name": "Player Voted", "url": "https://forza.net/news/" }
+    { "name": "Player Voted (repeat series)", "url": "https://forza.net/news/forza-horizon-5-festival-playlist-voting" }
 ];
 
 window.addEventListener("load", function() {
@@ -93,11 +73,17 @@ function showSeriesAndSeasonInfo(date = new Date()) {
     nextSeriesStart = addDays(nextSeasonStart, weeksRemainingInSeries * 7);
 
     // Series
+    const defaultSeriesInfo = seriesNames[seriesNames.length - 1];
     document.getElementById('current-series-number').innerHTML = currentSeries;
-    document.getElementById('current-series-link').innerHTML = seriesNames[currentSeries].name || "Unannounced";
-    document.getElementById('current-series-link').href = seriesNames[currentSeries].url || "https://forza.net/news/";
-    document.getElementById('next-series-link').innerHTML = seriesNames[currentSeries + 1].name || "Unannounced";
-    document.getElementById('next-series-link').href = seriesNames[currentSeries + 1].url || "https://forza.net/news/";
+    
+    const currentSeriesInfo = seriesNames[currentSeries] || defaultSeriesInfo;
+    document.getElementById('current-series-link').innerHTML = currentSeriesInfo.name;
+    document.getElementById('current-series-link').href = currentSeriesInfo.url;
+    
+    const nextSeriesInfo = seriesNames[currentSeries + 1] || defaultSeriesInfo;
+    document.getElementById('next-series-link').innerHTML = nextSeriesInfo.name;
+    document.getElementById('next-series-link').href = nextSeriesInfo.url;
+    
     document.getElementById('next-series-date').innerHTML = nextSeriesStart.toLocaleString();
 
     // Season
