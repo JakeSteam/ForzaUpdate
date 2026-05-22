@@ -1,4 +1,4 @@
-var firstSeriesStart = new Date(Date.UTC(2026, 5, 22, 14, 30, 0));
+var firstSeriesStart = new Date(Date.UTC(2026, 5, 21, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
