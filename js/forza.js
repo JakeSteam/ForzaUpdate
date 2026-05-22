@@ -1,4 +1,4 @@
-var firstSeriesStart = new Date(Date.UTC(2026, 5, 21, 14, 30, 0));
+var firstSeriesStart = new Date(Date.UTC(2026, 4, 21, 14, 30, 0));
 var nextSeasonStart;
 var nextSeriesStart;
 var seasons = [
@@ -33,11 +33,11 @@ function showSeriesAndSeasonInfo(date = new Date()) {
     const defaultSeriesInfo = seriesNames[seriesNames.length - 1];
     document.getElementById('current-series-number').innerHTML = currentSeries;
     
-    const currentSeriesInfo = seriesNames[currentSeries] || defaultSeriesInfo;
+    const currentSeriesInfo = seriesNames[currentSeries - 1] || defaultSeriesInfo;
     document.getElementById('current-series-link').innerHTML = currentSeriesInfo.name;
     document.getElementById('current-series-link').href = currentSeriesInfo.url;
-    
-    const nextSeriesInfo = seriesNames[currentSeries + 1] || defaultSeriesInfo;
+
+    const nextSeriesInfo = seriesNames[currentSeries] || defaultSeriesInfo;
     document.getElementById('next-series-link').innerHTML = nextSeriesInfo.name;
     document.getElementById('next-series-link').href = nextSeriesInfo.url;
     
