@@ -5,7 +5,7 @@ var seasons = [
     "Summer",
     "Autumn",
     "Winter",
-    "Sprint"
+    "Spring"
 ];
 var seriesNames = [
     { "name": "Welcome to Japan", "url": "https://forza.net/news/forza-horizon-6-series-1" },
