@@ -11,7 +11,8 @@ var seriesNames = [
     { "name": "Welcome to Japan", "url": "https://forza.net/news/forza-horizon-6-series-1" },
     { "name": "Horizon Decades", "url": "https://forza.net/news/forza-horizon-6-series-2" },
     { "name": "Italian Exotics", "url": "https://forza.net/news/forza-horizon-6-series-3" },
-    { "name": "Horizon Mascot Party", "url": "https://forza.net/" }
+    { "name": "Horizon Mascot Party", "url": "https://forza.net/news/forza-horizon-6-series-4" },
+    { "name": "British Automotive", "url": "https://forza.net/news/" }
 ];
 
 window.addEventListener("load", function() {
