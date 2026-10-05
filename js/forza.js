@@ -13,7 +13,8 @@ var seriesNames = [
     { "name": "Italian Exotics", "url": "https://forza.net/news/forza-horizon-6-series-3" },
     { "name": "Horizon Mascot Party", "url": "https://forza.net/news/forza-horizon-6-series-4" },
     { "name": "British Automotive", "url": "https://forza.net/news/forza-horizon-6-series-5" },
-    { "name": "Horizon Meets", "url": "https://forza.net/news/" }
+    { "name": "Horizon Meets", "url": "https://forza.net/news/forza-horizon-6-series-6" },
+    { "name": "City Life", "url": "https://forza.net/news/forza-horizon-6-series-7" }
 ];
 
 window.addEventListener("load", function() {
